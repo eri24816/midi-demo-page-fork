@@ -1,38 +1,53 @@
 {
   ".": {
     "dirs": [
-      "Cherry-picked Generation from Scratch",
-      "Generate from Seed"
+      "baseline",
+      "our model"
     ],
     "files": [
       "settings.json"
     ]
   },
-  "Cherry-picked Generation from Scratch": {
-    "dirs": [],
-    "files": [
-      "0.mid"
-    ]
-  },
-  "Generate from Seed": {
+  "baseline": {
     "dirs": [
-      "Ground truth",
-      "Our model"
+      "whole-song-gen-07-05_010530"
     ],
     "files": []
   },
-  "Generate from Seed/Ground truth": {
+  "baseline/whole-song-gen-07-05_010530": {
     "dirs": [],
     "files": [
-      "00060000.mid",
-      "00061000.mid"
+      "description.txt",
+      "form.txt",
+      "generation-0.mid",
+      "generation-1.mid",
+      "generation-2.mid",
+      "generation-3.mid"
     ]
   },
-  "Generate from Seed/Our model": {
+  "our model": {
     "dirs": [],
     "files": [
-      "00060000.mid",
-      "00061000.mid"
+      "11.mid",
+      "12.mid",
+      "13.mid",
+      "14.mid",
+      "15.mid",
+      "16.mid",
+      "17.mid",
+      "18.mid",
+      "19.mid",
+      "20.mid",
+      "21.mid",
+      "22.mid",
+      "23.mid",
+      "24.mid",
+      "25.mid",
+      "26.mid",
+      "27.mid",
+      "28.mid",
+      "29.mid",
+      "30.mid"
     ]
   }
 }

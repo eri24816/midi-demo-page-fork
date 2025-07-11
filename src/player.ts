@@ -91,13 +91,18 @@ export class Player {
     private startOffset: number = 0
     private gain: Tone.Gain
 
+    private velTransform(vel: number) {
+        // return Math.pow(vel / 127, 1.5) * 127
+        return vel
+    }
+
     constructor() {
         const tonePiano = new Piano({
             velocities: 5,
             volume: {
                 pedal: 0,
                 strings: 0,
-                keybed: 0,
+                keybed: -8,
                 harmonics: 0,
             }
         })
@@ -123,7 +128,7 @@ export class Player {
 
     playNoteDown(note: INote) {
         if (!this.piano) return;
-        this.piano.playNoteImmediate(note.pitch, note.velocity, note.endTime - note.startTime);
+        this.piano.playNoteImmediate(note.pitch, this.velTransform(note.velocity), note.endTime - note.startTime);
     }
 
     playNoteUp(note: INote) {
@@ -166,7 +171,7 @@ export class Player {
             for (; currentNoteIdx < this.notes.length; currentNoteIdx++) {
                 const note = this.notes[currentNoteIdx];
                 if (currentTime >= note.startTime) {
-                    this.piano.playNoteImmediate(note.pitch, note.velocity, note.endTime - note.startTime);
+                    this.piano.playNoteImmediate(note.pitch, this.velTransform(note.velocity), note.endTime - note.startTime);
                     noteOnCallback(note);
                 } else {
                     break;

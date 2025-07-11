@@ -69,7 +69,11 @@ export class Pianoroll {
 
         const midi = new Midi(midiData);
         this.bps = getBps(midi);
-        this.notes = midi.tracks[0].notes.map(
+        let targetTrack = 0;
+        if (midi.tracks.length > 1) {
+            targetTrack = 5
+        }
+        this.notes = midi.tracks[targetTrack].notes.map(
             (note) =>
                 new Note(
                     note.time * this.bps,

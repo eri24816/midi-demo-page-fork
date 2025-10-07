@@ -1,53 +1,39 @@
 {
   ".": {
     "dirs": [
-      "baseline",
-      "our model"
+      "This is a basic section",
+      "This is a grouped section"
     ],
     "files": [
       "settings.json"
     ]
   },
-  "baseline": {
+  "This is a basic section": {
+    "dirs": [],
+    "files": [
+      "midi_file_1.mid",
+      "midi_file_2.mid"
+    ]
+  },
+  "This is a grouped section": {
     "dirs": [
-      "whole-song-gen-07-05_010530"
+      "Generation",
+      "Seed"
     ],
     "files": []
   },
-  "baseline/whole-song-gen-07-05_010530": {
+  "This is a grouped section/Generation": {
     "dirs": [],
     "files": [
-      "description.txt",
-      "form.txt",
-      "generation-0.mid",
-      "generation-1.mid",
-      "generation-2.mid",
-      "generation-3.mid"
+      "CbpNX-Pfy3E_ABCDE.mid",
+      "OuUyZEcOz34_ABCACAD.mid"
     ]
   },
-  "our model": {
+  "This is a grouped section/Seed": {
     "dirs": [],
     "files": [
-      "11.mid",
-      "12.mid",
-      "13.mid",
-      "14.mid",
-      "15.mid",
-      "16.mid",
-      "17.mid",
-      "18.mid",
-      "19.mid",
-      "20.mid",
-      "21.mid",
-      "22.mid",
-      "23.mid",
-      "24.mid",
-      "25.mid",
-      "26.mid",
-      "27.mid",
-      "28.mid",
-      "29.mid",
-      "30.mid"
+      "CbpNX-Pfy3E_ABCDE.mid",
+      "OuUyZEcOz34_ABCACAD.mid"
     ]
   }
 }

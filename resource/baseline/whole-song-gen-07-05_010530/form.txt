@@ -1,3 +1,0 @@
-A4B8C8B8
-key: 0
-is_major: True

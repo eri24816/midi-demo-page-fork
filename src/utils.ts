@@ -79,7 +79,7 @@ export class Pianoroll {
                     note.time * this.bps,
                     note.duration * this.bps,
                     note.midi,
-                    note.velocity*127,
+                    midi.tracks.length == 1? note.velocity*127:85,
                 ),
         );
         this.recalculateDuration();

@@ -1,16 +1,17 @@
 {
-    "title": "Midi Demo Page",
-    "description": "A template for a demo page for a music generation model.",
+    "title": "Demo page - Segment-Factorized Full-Song Generation on Symbolic Piano Music",
+    "description": "39th Conference on Neural Information Processing Systems (NeurIPS 2025) Workshop: AI for Music.",
     "sections": [
         {
-            "name": "Cherry-picked Generation from Scratch",
-            "order": 1,
-            "description": "It's my favorite -- extended by AI from [this song](https://open.spotify.com/album/0xOJA8yHe2tTQoeNDXNa6c?si=tlFI38cuR5S4z9_bT5QwqQ)."
+            "name": "Generate from scratch",
+            "order": 2,
+            "description": "The model generates every segment of the song on its own, including the seed segment."
         },
         {
-            "name": "Generate from Seed",
-            "order": 2,
-            "description": "Generate a new piece of music based on the ground truth.\n This is the second line."
+            "name": "Generate from seed",
+            "order": 1,
+            "description": "Generation conditioned on a 8-bar seed extracted from songs in test set\n For each seed, we generate songs for these 4 different structures: \n | # | segments           | compose order (for our model)        |\n|---|---------------------------|------------------------|\n| 1 | A8 B16 C8 D8 E8           | [2, 0, 1, 3, 4]         |\n| 2 | A4 B8 C8 D8 B8 C16 E8     | [2, 5, 1, 4, 3, 0, 6]   |\n| 3 | A8 B8 C4 B8 D8 B8 E4      | [1, 0, 2, 3, 4, 5, 6]   |\n| 4 | A4 B8 C8 A8 C8 A8 D8      | [3, 0, 1, 2, 4, 5, 6]   |"
+            
         }
     ]
 }

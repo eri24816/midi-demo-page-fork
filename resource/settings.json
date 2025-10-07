@@ -1,16 +1,17 @@
 {
-    "title": "MIDI Demo Page",
-    "description": "A demo page template for symbolic music.",
+    "title": "Demo page - Segment-Factorized Full-Song Generation on Symbolic Piano Music",
+    "description": "39th Conference on Neural Information Processing Systems (NeurIPS 2025) Workshop: AI for Music.",
     "sections": [
         {
-            "name": "This is a basic section",
-            "order": 1,
-            "description": "A basic section contains a list of midi files. One file is shown at a time."
+            "name": "Generate from scratch",
+            "order": 2,
+            "description": "The model generates every segment of the song on its own, including the seed segment."
         },
         {
-            "name": "This is a grouped section",
-            "order": 2,
-            "description": "In grouped section, multiple files are shown to be compared."
+            "name": "Generate from seed",
+            "order": 1,
+            "description": "Generation conditioned on a 8-bar seed extracted from songs in test set\n For each seed, we generate songs for these 4 different structures: \n | # | segments           | compose order (for our model)        |\n|---|---------------------------|------------------------|\n| 1 | A8 B16 C8 D8 E8           | [2, 0, 1, 3, 4]         |\n| 2 | A4 B8 C8 D8 B8 C16 E8     | [2, 5, 1, 4, 3, 0, 6]   |\n| 3 | A8 B8 C4 B8 D8 B8 E4      | [1, 0, 2, 3, 4, 5, 6]   |\n| 4 | A4 B8 C8 A8 C8 A8 D8      | [3, 0, 1, 2, 4, 5, 6]   |"
+            
         }
     ]
 }
